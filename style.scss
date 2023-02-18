@@ -1,0 +1,65 @@
+$color-bg: #5c80bc;
+$color-title: #cdd1c4;
+$color-editor: #30323d;
+$color-note: #e8c547;
+$color-buttons: #4d5061;
+html{
+    font-family: 'Sriracha', cursive;
+}
+body{
+    background-color: $color-bg;
+}
+.body-title{
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+    font-size: 60px;
+    color: $color-title;
+    text-shadow: 2px 2px #1b1b1b;
+}
+.editor {
+    width: 30%;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: $color-editor;
+    @media screen and (max-width: 768px){
+        width: 95%;
+    }
+}
+.toolbar {
+    margin-bottom: 10px;
+    button{
+        width: 40px;
+        height: 30px;
+        border-radius: 5px;
+    }
+}
+.delete{
+    button{
+        width: 80px;
+        height: 30px;
+        border-radius: 5px;
+    }
+}
+button {
+    margin-right: 3px;
+    background-color: $color-buttons;
+    color: $color-title;
+    cursor: pointer;
+    &:hover{
+        background-color: lighten(#4d5061, 10%);
+    }
+}
+.content {
+    min-height: 300px;
+    padding: 10px;
+    background-color: $color-note;
+    font-size: 25px;
+}
+.editor-top{
+    display: flex;
+    justify-content: space-between;
+}
+.active{
+    background-color: lighten(#4d5061, 20%);
+}

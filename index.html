@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>QUICK NOTE</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/3209/3209265.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sriracha&display=swap" rel="stylesheet">
+</head>
+<body>
+        <div class="body-title">QUICK NOTE</div>
+    <div class="editor">
+        <div class="editor-top">
+            <div class="toolbar">
+                <button class="bold" onclick="document.execCommand('bold', false, '')">B</button>
+                <button class="italic" onclick="document.execCommand('italic', false, '')">I</button>
+                <button class="underline" onclick="document.execCommand('underline', false, '')">U</button>
+            </div>
+            <div class="delete">
+                <button>CLEAR</button>
+            </div>
+        </div>
+        <div class="content" contenteditable="true"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
