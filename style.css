@@ -1,5 +1,8 @@
 html {
   font-family: "Sriracha", cursive;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -14,6 +17,11 @@ body {
   color: #cdd1c4;
   text-shadow: 2px 2px #1b1b1b;
 }
+@media screen and (max-width: 768px) {
+  .body-title {
+    font-size: 40px;
+  }
+}
 
 .editor {
   width: 30%;
@@ -23,7 +31,7 @@ body {
 }
 @media screen and (max-width: 768px) {
   .editor {
-    width: 95%;
+    width: 90%;
   }
 }
 
@@ -57,6 +65,11 @@ button:hover {
   padding: 10px;
   background-color: #e8c547;
   font-size: 25px;
+}
+@media only screen and (max-width: 768px) {
+  .content {
+    min-height: 270px;
+  }
 }
 
 .editor-top {

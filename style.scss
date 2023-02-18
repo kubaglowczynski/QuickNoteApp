@@ -5,6 +5,9 @@ $color-note: #e8c547;
 $color-buttons: #4d5061;
 html{
     font-family: 'Sriracha', cursive;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 body{
     background-color: $color-bg;
@@ -16,14 +19,18 @@ body{
     font-size: 60px;
     color: $color-title;
     text-shadow: 2px 2px #1b1b1b;
+    @media screen and (max-width: 768px){
+        font-size: 40px;
+    }
 }
 .editor {
     width: 30%;
     margin: 0 auto;
     padding: 10px;
     background-color: $color-editor;
+    
     @media screen and (max-width: 768px){
-        width: 95%;
+        width: 90%;
     }
 }
 .toolbar {
@@ -55,6 +62,9 @@ button {
     padding: 10px;
     background-color: $color-note;
     font-size: 25px;
+    @media only screen and (max-width: 768px){
+        min-height: 270px;
+    }
 }
 .editor-top{
     display: flex;
