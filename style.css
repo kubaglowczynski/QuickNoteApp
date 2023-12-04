@@ -1,5 +1,5 @@
 html {
-  font-family: "Sriracha", cursive;
+  font-family: "Arial", cursive;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -65,6 +65,7 @@ button:hover {
   padding: 10px;
   background-color: #e8c547;
   font-size: 25px;
+  outline: none;
 }
 @media only screen and (max-width: 768px) {
   .content {
@@ -79,4 +80,4 @@ button:hover {
 
 .active {
   background-color: #7d8197;
-}/*# sourceMappingURL=style.css.map */
+} /*# sourceMappingURL=style.css.map */
